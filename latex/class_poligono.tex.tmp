@@ -1,0 +1,151 @@
+\hypertarget{class_poligono}{}\section{Poligono Class Reference}
+\label{class_poligono}\index{Poligono@{Poligono}}
+
+
+The \hyperlink{class_poligono}{Poligono} class Representa polígonos convexos de até 100 vértices.  
+
+
+
+
+{\ttfamily \#include $<$poligono.\+h$>$}
+
+
+
+Inheritance diagram for Poligono\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_poligono_a9311a9a1496878c09c8508b3636e2870}{Poligono} ()\hypertarget{class_poligono_a9311a9a1496878c09c8508b3636e2870}{}\label{class_poligono_a9311a9a1496878c09c8508b3636e2870}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_poligono}{Poligono} Incializa a quantidade de vértices como sendo 0, se o usuário não digitar nenhum vértice. \end{DoxyCompactList}\item 
+void \hyperlink{class_poligono_a3e40677cbd5e4746d167b949c0af5cca}{add\+Vertices} (float x, float y)
+\begin{DoxyCompactList}\small\item\em add\+Vertices Adiciona mais um vértice ao polígono \end{DoxyCompactList}\item 
+int \hyperlink{class_poligono_a4aeb1cd951355549edea8c5aa9109567}{quant\+Pontos} ()
+\begin{DoxyCompactList}\small\item\em quant\+Pontos Recupera a quantidade de vértices \end{DoxyCompactList}\item 
+float \hyperlink{class_poligono_ac1e37e274f61dff6c421f972ef1cf891}{area\+Poligono} ()
+\begin{DoxyCompactList}\small\item\em area\+Poligono Calcula a área de um polígono utilizando a regra de Shoelaces \end{DoxyCompactList}\item 
+void \hyperlink{class_poligono_a4d757f52ba9366ab13537fb19b363e1e}{translada\+Poligono} (float a, float b)
+\begin{DoxyCompactList}\small\item\em translada\+Poligono Translada o polígono em relação a um ponto \end{DoxyCompactList}\item 
+void \hyperlink{class_poligono_a2257f2c0cd5eddae3377bea5c5aef53f}{rotaciona\+Poligono} (\hyperlink{class_point}{Point} p, float angulo)
+\begin{DoxyCompactList}\small\item\em rotaciona\+Poligono Rotaciona o polígono em relação a um ponto p teta graus \end{DoxyCompactList}\item 
+void \hyperlink{class_poligono_a87d58f9d4827793eaa811491cce097b0}{imprime\+Poligono} ()\hypertarget{class_poligono_a87d58f9d4827793eaa811491cce097b0}{}\label{class_poligono_a87d58f9d4827793eaa811491cce097b0}
+
+\begin{DoxyCompactList}\small\item\em imprime\+Poligono Imprime o polígono na forma\+: (x0,y0) -\/$>$ (x1,y1) -\/$>$ (x2,y2) ... \end{DoxyCompactList}\item 
+void \hyperlink{class_poligono_a77ab16e456331fad4bd321ce28d8a4bd}{print} (int)
+\begin{DoxyCompactList}\small\item\em print Imprime uma coordenada escolhida do vértice \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_poligono}{Poligono} class Representa polígonos convexos de até 100 vértices. 
+
+\subsection{Member Function Documentation}
+\index{Poligono@{Poligono}!add\+Vertices@{add\+Vertices}}
+\index{add\+Vertices@{add\+Vertices}!Poligono@{Poligono}}
+\subsubsection[{\texorpdfstring{add\+Vertices(float x, float y)}{addVertices(float x, float y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poligono\+::add\+Vertices (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poligono_a3e40677cbd5e4746d167b949c0af5cca}{}\label{class_poligono_a3e40677cbd5e4746d167b949c0af5cca}
+
+
+add\+Vertices Adiciona mais um vértice ao polígono 
+
+
+\begin{DoxyEnumerate}
+\item os vértices devem ser adicionadas no sentido anti-\/horário 
+\begin{DoxyParams}{Parameters}
+{\em x} & Coordenada x do vértice \\
+\hline
+{\em y} & Coordenada y do vértice \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyEnumerate}\index{Poligono@{Poligono}!area\+Poligono@{area\+Poligono}}
+\index{area\+Poligono@{area\+Poligono}!Poligono@{Poligono}}
+\subsubsection[{\texorpdfstring{area\+Poligono()}{areaPoligono()}}]{\setlength{\rightskip}{0pt plus 5cm}float Poligono\+::area\+Poligono (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poligono_ac1e37e274f61dff6c421f972ef1cf891}{}\label{class_poligono_ac1e37e274f61dff6c421f972ef1cf891}
+
+
+area\+Poligono Calcula a área de um polígono utilizando a regra de Shoelaces 
+
+\begin{DoxyReturn}{Returns}
+Retorna a área do polígono 
+\end{DoxyReturn}
+\index{Poligono@{Poligono}!print@{print}}
+\index{print@{print}!Poligono@{Poligono}}
+\subsubsection[{\texorpdfstring{print(int)}{print(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poligono\+::print (
+\begin{DoxyParamCaption}
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poligono_a77ab16e456331fad4bd321ce28d8a4bd}{}\label{class_poligono_a77ab16e456331fad4bd321ce28d8a4bd}
+
+
+print Imprime uma coordenada escolhida do vértice 
+
+
+\begin{DoxyEnumerate}
+\item o usuário deve passar o número do ponto que o vértice se encontra para imprimi-\/lo 
+\item Exemplo\+: (x0,y0) -\/$>$ (x1,y1) -\/$>$ (x2,y2), print(1), vai imprimir (x1,y1) 
+\end{DoxyEnumerate}\index{Poligono@{Poligono}!quant\+Pontos@{quant\+Pontos}}
+\index{quant\+Pontos@{quant\+Pontos}!Poligono@{Poligono}}
+\subsubsection[{\texorpdfstring{quant\+Pontos()}{quantPontos()}}]{\setlength{\rightskip}{0pt plus 5cm}int Poligono\+::quant\+Pontos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poligono_a4aeb1cd951355549edea8c5aa9109567}{}\label{class_poligono_a4aeb1cd951355549edea8c5aa9109567}
+
+
+quant\+Pontos Recupera a quantidade de vértices 
+
+\begin{DoxyReturn}{Returns}
+Retorna a quantidade de vértices 
+\end{DoxyReturn}
+\index{Poligono@{Poligono}!rotaciona\+Poligono@{rotaciona\+Poligono}}
+\index{rotaciona\+Poligono@{rotaciona\+Poligono}!Poligono@{Poligono}}
+\subsubsection[{\texorpdfstring{rotaciona\+Poligono(\+Point p, float angulo)}{rotacionaPoligono(Point p, float angulo)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poligono\+::rotaciona\+Poligono (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{p, }
+\item[{float}]{angulo}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poligono_a2257f2c0cd5eddae3377bea5c5aef53f}{}\label{class_poligono_a2257f2c0cd5eddae3377bea5c5aef53f}
+
+
+rotaciona\+Poligono Rotaciona o polígono em relação a um ponto p teta graus 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Ponto \\
+\hline
+{\em angulo} & Ângulo em graus \\
+\hline
+\end{DoxyParams}
+\index{Poligono@{Poligono}!translada\+Poligono@{translada\+Poligono}}
+\index{translada\+Poligono@{translada\+Poligono}!Poligono@{Poligono}}
+\subsubsection[{\texorpdfstring{translada\+Poligono(float a, float b)}{transladaPoligono(float a, float b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poligono\+::translada\+Poligono (
+\begin{DoxyParamCaption}
+\item[{float}]{a, }
+\item[{float}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poligono_a4d757f52ba9366ab13537fb19b363e1e}{}\label{class_poligono_a4d757f52ba9366ab13537fb19b363e1e}
+
+
+translada\+Poligono Translada o polígono em relação a um ponto 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Coordenada x do ponto \\
+\hline
+{\em b} & Coordenada y do ponto \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+poligono.\+h\item 
+poligono.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,227 @@
+\hypertarget{class_point}{}\section{Point Class Reference}
+\label{class_point}\index{Point@{Point}}
+
+
+The \hyperlink{class_point}{Point} class Representa um ponto bidimensional.  
+
+
+
+
+{\ttfamily \#include $<$point.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_point_ad92f2337b839a94ce97dcdb439b4325a}{Point} ()\hypertarget{class_point_ad92f2337b839a94ce97dcdb439b4325a}{}\label{class_point_ad92f2337b839a94ce97dcdb439b4325a}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_point}{Point} Inicializa as coordenadas x e y com 0, caso o usuário não forneça as coordenadas. \end{DoxyCompactList}\item 
+\hyperlink{class_point_a8c100b422fca2e51ddda13512a44f75a}{Point} (float \+\_\+abscissa, float \+\_\+ordenada)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_point}{Point} Atribui as coordenadas x e y fornecidas pelo usuário, às variáveis da classe. \end{DoxyCompactList}\item 
+void \hyperlink{class_point_a44d3365a8b5e0475e637bbf05e904f45}{setX} (float \+\_\+abscissa)
+\begin{DoxyCompactList}\small\item\em setX Insere na classe a coordenada x do ponto fornecida pelo usuário \end{DoxyCompactList}\item 
+void \hyperlink{class_point_a10dd1687db939fa9085482338c3a5ac2}{setY} (float \+\_\+ordenada)
+\begin{DoxyCompactList}\small\item\em setY Insere na classe a coordenada y do ponto fornecida pelo usuário \end{DoxyCompactList}\item 
+void \hyperlink{class_point_a94b06959bc7a93675f973dc2036b651a}{set\+XY} (float \+\_\+abscissa, float \+\_\+ordenada)
+\begin{DoxyCompactList}\small\item\em set\+XY Insere na classe as coordenadas x e y fornecidas pelo usuário \end{DoxyCompactList}\item 
+float \hyperlink{class_point_acc27466778cc87a662bba40268c4c0c8}{getX} ()
+\begin{DoxyCompactList}\small\item\em getX Recupera o valor da coordena x previamente armazenada \end{DoxyCompactList}\item 
+float \hyperlink{class_point_a3cccbca94719ddde353cce86ce0e2f64}{getY} ()
+\begin{DoxyCompactList}\small\item\em getY Recupera o valor da coordenada y previamente armazenada \end{DoxyCompactList}\item 
+\hyperlink{class_point}{Point} \hyperlink{class_point_a9dbea84b07b0a8ec3bbb9e58b3d15899}{add} (\hyperlink{class_point}{Point} p1)
+\begin{DoxyCompactList}\small\item\em add Soma as coordenadas de um ponto com outro ponto \end{DoxyCompactList}\item 
+\hyperlink{class_point}{Point} \hyperlink{class_point_a9cf2c53b0a4e6282a6712824bb4e9b00}{sub} (\hyperlink{class_point}{Point} p1)
+\begin{DoxyCompactList}\small\item\em sub Subtrai as coordenadas de um ponto com outro ponto \end{DoxyCompactList}\item 
+float \hyperlink{class_point_abd2618d1f505d9392893273a66e7c9b2}{norma} ()
+\begin{DoxyCompactList}\small\item\em norma Calcula a norma do ponto fornecido \end{DoxyCompactList}\item 
+\hyperlink{class_point}{Point} \hyperlink{class_point_a8fc932c5dcb7ef85208b01f7efa83163}{translada} (float a, float b)
+\begin{DoxyCompactList}\small\item\em translada Translada um ponto em relação a outro ponto \end{DoxyCompactList}\item 
+void \hyperlink{class_point_a1fb5c2501c27ab2cbc99d06c2a26a741}{imprime} ()\hypertarget{class_point_a1fb5c2501c27ab2cbc99d06c2a26a741}{}\label{class_point_a1fb5c2501c27ab2cbc99d06c2a26a741}
+
+\begin{DoxyCompactList}\small\item\em imprime Imprimi o ponto na forma\+: (x,y) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_point}{Point} class Representa um ponto bidimensional. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection[{\texorpdfstring{Point(float \+\_\+abscissa, float \+\_\+ordenada)}{Point(float _abscissa, float _ordenada)}}]{\setlength{\rightskip}{0pt plus 5cm}Point\+::\+Point (
+\begin{DoxyParamCaption}
+\item[{float}]{\+\_\+abscissa, }
+\item[{float}]{\+\_\+ordenada}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_a8c100b422fca2e51ddda13512a44f75a}{}\label{class_point_a8c100b422fca2e51ddda13512a44f75a}
+
+
+\hyperlink{class_point}{Point} Atribui as coordenadas x e y fornecidas pelo usuário, às variáveis da classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+abscissa} & Coordenada x do ponto \\
+\hline
+{\em \+\_\+ordenada} & Coordenada y do ponto \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Point@{Point}!add@{add}}
+\index{add@{add}!Point@{Point}}
+\subsubsection[{\texorpdfstring{add(\+Point p1)}{add(Point p1)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Point\+::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{p1}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_a9dbea84b07b0a8ec3bbb9e58b3d15899}{}\label{class_point_a9dbea84b07b0a8ec3bbb9e58b3d15899}
+
+
+add Soma as coordenadas de um ponto com outro ponto 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & Ponto que será adicionado ao outro ponto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o valor da soma 
+\end{DoxyReturn}
+\index{Point@{Point}!getX@{getX}}
+\index{getX@{getX}!Point@{Point}}
+\subsubsection[{\texorpdfstring{get\+X()}{getX()}}]{\setlength{\rightskip}{0pt plus 5cm}float Point\+::getX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_acc27466778cc87a662bba40268c4c0c8}{}\label{class_point_acc27466778cc87a662bba40268c4c0c8}
+
+
+getX Recupera o valor da coordena x previamente armazenada 
+
+\begin{DoxyReturn}{Returns}
+Retorna o valor de x do ponto 
+\end{DoxyReturn}
+\index{Point@{Point}!getY@{getY}}
+\index{getY@{getY}!Point@{Point}}
+\subsubsection[{\texorpdfstring{get\+Y()}{getY()}}]{\setlength{\rightskip}{0pt plus 5cm}float Point\+::getY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_a3cccbca94719ddde353cce86ce0e2f64}{}\label{class_point_a3cccbca94719ddde353cce86ce0e2f64}
+
+
+getY Recupera o valor da coordenada y previamente armazenada 
+
+\begin{DoxyReturn}{Returns}
+Recupera o valor de y do ponto 
+\end{DoxyReturn}
+\index{Point@{Point}!norma@{norma}}
+\index{norma@{norma}!Point@{Point}}
+\subsubsection[{\texorpdfstring{norma()}{norma()}}]{\setlength{\rightskip}{0pt plus 5cm}float Point\+::norma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_abd2618d1f505d9392893273a66e7c9b2}{}\label{class_point_abd2618d1f505d9392893273a66e7c9b2}
+
+
+norma Calcula a norma do ponto fornecido 
+
+\begin{DoxyReturn}{Returns}
+Retorna o valor da norma 
+\end{DoxyReturn}
+\index{Point@{Point}!setX@{setX}}
+\index{setX@{setX}!Point@{Point}}
+\subsubsection[{\texorpdfstring{set\+X(float \+\_\+abscissa)}{setX(float _abscissa)}}]{\setlength{\rightskip}{0pt plus 5cm}void Point\+::setX (
+\begin{DoxyParamCaption}
+\item[{float}]{\+\_\+abscissa}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_a44d3365a8b5e0475e637bbf05e904f45}{}\label{class_point_a44d3365a8b5e0475e637bbf05e904f45}
+
+
+setX Insere na classe a coordenada x do ponto fornecida pelo usuário 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+abscissa} & Coordena x do ponto \\
+\hline
+\end{DoxyParams}
+\index{Point@{Point}!set\+XY@{set\+XY}}
+\index{set\+XY@{set\+XY}!Point@{Point}}
+\subsubsection[{\texorpdfstring{set\+X\+Y(float \+\_\+abscissa, float \+\_\+ordenada)}{setXY(float _abscissa, float _ordenada)}}]{\setlength{\rightskip}{0pt plus 5cm}void Point\+::set\+XY (
+\begin{DoxyParamCaption}
+\item[{float}]{\+\_\+abscissa, }
+\item[{float}]{\+\_\+ordenada}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_a94b06959bc7a93675f973dc2036b651a}{}\label{class_point_a94b06959bc7a93675f973dc2036b651a}
+
+
+set\+XY Insere na classe as coordenadas x e y fornecidas pelo usuário 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+abscissa} & Coordenada x do ponto \\
+\hline
+{\em \+\_\+ordenada} & Coordenada y do ponto \\
+\hline
+\end{DoxyParams}
+\index{Point@{Point}!setY@{setY}}
+\index{setY@{setY}!Point@{Point}}
+\subsubsection[{\texorpdfstring{set\+Y(float \+\_\+ordenada)}{setY(float _ordenada)}}]{\setlength{\rightskip}{0pt plus 5cm}void Point\+::setY (
+\begin{DoxyParamCaption}
+\item[{float}]{\+\_\+ordenada}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_a10dd1687db939fa9085482338c3a5ac2}{}\label{class_point_a10dd1687db939fa9085482338c3a5ac2}
+
+
+setY Insere na classe a coordenada y do ponto fornecida pelo usuário 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+ordenada} & Coordenada y do ponto \\
+\hline
+\end{DoxyParams}
+\index{Point@{Point}!sub@{sub}}
+\index{sub@{sub}!Point@{Point}}
+\subsubsection[{\texorpdfstring{sub(\+Point p1)}{sub(Point p1)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Point\+::sub (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{p1}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_a9cf2c53b0a4e6282a6712824bb4e9b00}{}\label{class_point_a9cf2c53b0a4e6282a6712824bb4e9b00}
+
+
+sub Subtrai as coordenadas de um ponto com outro ponto 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & Ponto de será o subtraendo da operação \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o valor da subtração 
+\end{DoxyReturn}
+\index{Point@{Point}!translada@{translada}}
+\index{translada@{translada}!Point@{Point}}
+\subsubsection[{\texorpdfstring{translada(float a, float b)}{translada(float a, float b)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Point\+::translada (
+\begin{DoxyParamCaption}
+\item[{float}]{a, }
+\item[{float}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_a8fc932c5dcb7ef85208b01f7efa83163}{}\label{class_point_a8fc932c5dcb7ef85208b01f7efa83163}
+
+
+translada Translada um ponto em relação a outro ponto 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Coordenada x do ponto \\
+\hline
+{\em b} & Coordenada y do ponto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o valor da translação 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+point.\+h\item 
+point.\+cpp\end{DoxyCompactItemize}
